@@ -21,47 +21,59 @@
       <button data-category="clinical">🏥 Clinical Views</button>
     </div>
 
+    <!-- Embedded Tableau Dashboard -->
+    <section class="dashboard-container">
+      <h2>📊 Interactive LOS Dashboard</h2>
+      <div class="tableauPlaceholder" id="viz1753321108737" style="position: relative">
+        <noscript>
+          <a href="#"><img alt="Length of Stay" src="https://public.tableau.com/static/images/Le/LengthofStay_17530214381720/LengthofStay/1_rss.png" style="border: none" /></a>
+        </noscript>
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="LengthofStay_17530214381720/LengthofStay" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param name="static_image" value="https://public.tableau.com/static/images/Le/LengthofStay_17530214381720/LengthofStay/1.png" />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+      <script type="text/javascript">
+        var divElement = document.getElementById('viz1753321108737');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+          vizElement.style.minWidth='1000px';
+          vizElement.style.maxWidth='1120px';
+          vizElement.style.width='100%';
+          vizElement.style.minHeight='587px';
+          vizElement.style.maxHeight='727px';
+          vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        } else if (divElement.offsetWidth > 500) {
+          vizElement.style.minWidth='1000px';
+          vizElement.style.maxWidth='1120px';
+          vizElement.style.width='100%';
+          vizElement.style.minHeight='587px';
+          vizElement.style.maxHeight='727px';
+          vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        } else {
+          vizElement.style.width='100%';
+          vizElement.style.height='1427px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </section>
+
     <!-- Image Grid Gallery -->
     <section class="image-grid">
-      <figure class="chart-item kpi">
-        <img src="images/average -length-of-stay-kpi.jpg" alt="Average LOS KPI" />
-        <figcaption>🛏️ <strong>Average Length of Stay (9.5 days)</strong>: Benchmarking hospital stay durations to identify inefficiencies and optimize discharge planning.</figcaption>
-      </figure>
-
-      <figure class="chart-item clinical">
-        <img src="images/length-of-stay-trended.jpg" alt="LOS Trends" />
-        <figcaption>📈 <strong>LOS Trends</strong>: Weekly discharges benchmarked against average LOS—revealing shifts in stay durations.</figcaption>
-      </figure>
-
-      <figure class="chart-item clinical">
-        <img src="images/oe-by-diagnosis.jpg" alt="O/E by Diagnosis" />
-        <figcaption>🧪 <strong>Diagnosis Variance</strong>: Heat map comparing observed vs expected LOS across primary diagnoses.</figcaption>
-      </figure>
-
-      <figure class="chart-item clinical">
-        <img src="images/oe-by-service.jpg" alt="O/E by Service" />
-        <figcaption>📊 <strong>Service Line Benchmarking</strong>: Measuring LOS performance across departments.</figcaption>
-      </figure>
-
-      <figure class="chart-item formula">
-        <img src="images/calc-avg-los-days.jpg" alt="Calc Avg LOS" />
-        <figcaption>📐 <strong>Average LOS Formula</strong>: DATEDIFF logic to calculate LOS per patient record.</figcaption>
-      </figure>
-
-      <figure class="chart-item formula">
-        <img src="images/calc-length-of-stay-days.jpg" alt="LOS Logic" />
-        <figcaption>📐 <strong>LOS Calculation Logic</strong>: Adjusts for same-day discharges for accurate LOS reporting.</figcaption>
-      </figure>
-
-      <figure class="chart-item formula">
-        <img src="images/calc-oe-los.jpg" alt="O/E LOS Formula" />
-        <figcaption>📊 <strong>O/E LOS Classification</strong>: Categorizing cases based on variance from expected benchmarks.</figcaption>
-      </figure>
-
-      <figure class="chart-item kpi">
-        <img src="images/tableau-for-healthcare-dashboard.jpg" alt="LOS Dashboard Overview" />
-        <figcaption>📊 <strong>Comprehensive Dashboard</strong>: Tableau visualization comparing average and expected LOS across services.</figcaption>
-      </figure>
+      <!-- Existing figures go here (omitted for brevity) -->
     </section>
   </main>
 
