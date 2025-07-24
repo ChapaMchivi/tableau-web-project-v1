@@ -1,0 +1,139 @@
+/* Global Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  padding: 1.5em;
+  background-color: #005f73;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Main Content */
+main {
+  padding: 2em 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Filter Buttons */
+.filter-bar {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.filter-bar button {
+  background-color: #e0f2f1;
+  border: none;
+  margin: 0.5em;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #005f73;
+  transition: background-color 0.2s ease;
+}
+
+.filter-bar button.active,
+.filter-bar button:hover {
+  background-color: #b2dfdb;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.chart-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.chart-item img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.chart-item img:hover {
+  transform: scale(1.02);
+}
+
+figcaption {
+  margin-top: 0.8em;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+figcaption strong {
+  color: #005f73;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.lightbox.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  text-align: center;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+}
+
+#download-btn {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #e0f2f1;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #005f73;
+  font-weight: bold;
+}
+
+#download-btn:hover {
+  background-color: #b2dfdb;
+}
